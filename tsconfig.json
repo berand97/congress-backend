@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "declaration": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2021",
+    "sourceMap": true,
+    "outDir": "./dist",
+    "baseUrl": "./",
+    "incremental": true,
+    "skipLibCheck": true,
+    "strictNullChecks": false,
+    "noImplicitAny": false,
+    "strictBindCallApply": false,
+    "forceConsistentCasingInFileNames": false,
+    "noFallthroughCasesInSwitch": false,
+    "paths": {
+      "@modules/*": ["src/modules/*"],
+      "@authentication/*": ["src/modules/authentication/*"],
+      "@role/*": ["src/modules/roles/*"],
+      "@university/*": ["src/modules/university/*"],
+      "@user/*": ["src/modules/user/*"],
+      "@modalities/*": ["src/modules/modalities/*"],
+      "@sponsors/*": ["src/modules/sponsors/*"],
+      "@schedule/*": ["src/modules/schedule/*"],
+      "@knowledge/*": ["src/modules/knowledge/*"],
+      "@shared/*": ["src/shared/*"],
+      "@strategies/*": ["src/strategies/*"],
+      "@menu/*": ["src/modules/menu/*"]
+    }
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "dist"],
+}

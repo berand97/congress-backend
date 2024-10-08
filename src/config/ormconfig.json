@@ -1,0 +1,22 @@
+{
+    "name": "default",
+    "type": "mysql",
+    "host": "localhost",
+    "port": 3306,
+    "username": "root",
+    "password": "lJDQ#R&6c1RnCQ$zvuHmy%Vg$kgVOE7l",
+    "database": "congress",
+    "entities": [
+      "src/modules/**/entities/*.entity{.ts,.js}"
+    ],
+    "subscribers": [
+      "src/modules/**/subscribers/*.subscriber{.ts,.js}"
+    ],
+    "migrationsTableName": "migrations",
+    "migrations": [
+      "src/modules/**/migrations/*.migration{.ts,.js}"
+    ],
+    "synchronize": true,
+    "logging": "all",
+    "logger": "file"
+  }
